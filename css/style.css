@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root{
+  --primary: teal;
+  --secondary: #fff;
+  --additional: #06283d;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #06283d;
+  background: linear-gradient(to bottom left, var(--primary), var(--additional));;
 }
 
 .container {
@@ -21,6 +28,7 @@ body {
   width: 400px;
   height: 105px;
   background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   padding: 28px 32px;
   overflow: hidden;
   border-radius: 18px;
@@ -37,7 +45,7 @@ body {
 }
 
 .search-box input {
-  color: #06283d;
+  color: var(--primary);
   width: 80%;
   font-size: 24px;
   font-weight: 500;
@@ -48,7 +56,7 @@ body {
 .search-box input::placeholder {
   font-size: 20px;
   font-weight: 500;
-  color: #06283d;
+  color: var(--primary);
   text-transform: capitalize;
 }
 
@@ -56,7 +64,7 @@ body {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  color: #06283d;
+  color: var(--primary);
   background: #dff6ff;
   border-radius: 50%;
   font-size: 22px;
@@ -64,13 +72,13 @@ body {
 }
 
 .search-box button:hover {
-  color: #fff;
-  background: #06283d;
+  color: var(--secondary);
+  background: var(--primary);
 }
 
 .search-box i {
   position: absolute;
-  color: #06283d;
+  color: var(--primary);
   font-size: 28px;
 }
 
@@ -80,12 +88,11 @@ body {
 
 .weather-box img{
   width: 60%;
-  /* margin-top: 0px; */
 }
 
 .weather-box .temperature{
   position: relative;
-  color: #06283d;
+  color: var(--primary);
   font-size: 4rem;
   font-weight: 800;
   margin-top: 30px;
@@ -98,7 +105,7 @@ body {
 }
 
 .weather-box .description{
-  color: #06283d;
+  color: var(--primary);
   font-size: 22px;
   font-weight: 500;
   text-transform: capitalize;
@@ -129,20 +136,20 @@ body {
 }
 
 .weather-details i{
-  color: #06283d;
+  color: var(--primary);
   font-size: 26px;
   margin-right: 10px;
   margin-top: 6px;
 }
 
 .weather-details span{
-  color: #06283d;
+  color: var(--primary);
   font-size: 22px;
   font-weight: 500;
 }
 
 .weather-details p{
-  color: #06283d;
+  color: var(--primary);
   font-size: 14px;
   font-weight: 500;
 }
@@ -161,7 +168,7 @@ body {
 }
 
 .not-found p{
-  color: #06283d;
+  color: var(--primary);
   font-size: 22px;
   font-weight: 500;
   margin-top: 12px;
